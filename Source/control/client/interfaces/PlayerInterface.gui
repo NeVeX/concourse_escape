@@ -1,0 +1,164 @@
+
+new GameTSCtrl(PlayerInterface) {
+   profile = "GuiContentProfile";
+   horizSizing = "right";
+   vertSizing = "bottom";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   helpTag = "0";
+      noCursor = "1";
+
+   new GuiCrossHairHud() {
+      profile = "GuiDefaultProfile";
+      horizSizing = "center";
+      vertSizing = "center";
+      position = "304 224";
+      extent = "32 32";
+      minExtent = "8 8";
+      visible = "1";
+      helpTag = "0";
+      bitmap = "./interfaces/mygun";
+      wrap = "0";
+      damageFillColor = "0.000000 1.000000 0.000000 1.000000";
+      damageFrameColor = "1.000000 0.600000 0.000000 1.000000";
+      damageRect = "50 4";
+      damageOffset = "0 10";
+   };
+   new GuiTextCtrl(scorelabel) {
+      profile = "ScoreTextProfile";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      position = "10 3";
+      extent = "50 20";
+      minExtent = "8 8";
+      visible = "1";
+      helpTag = "0";
+      text = "Health : ";
+      maxLength = "255";
+   };
+   new GuiTextCtrl(Scorebox) {
+      profile = "ScoreTextProfile";
+      fillColor = "1.000000 1.000000 1.000000 0.000000";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      position = "67 3";
+      extent = "50 20";
+      minExtent = "8 8";
+      visible = "1";
+      helpTag = "0";
+      text = " ";
+      maxLength = "255";
+   };
+   new GuiTextCtrl(coinlabel) {
+      profile = "ScoreTextProfile";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      position = "700 30";
+      extent = "100 20";
+      minExtent = "8 8";
+      visible = "1";
+      helpTag = "0";
+      text = "Tokens : ";
+      maxLength = "255";
+   };
+   new GuiTextCtrl(Coinbox) {
+      profile = "ScoreTextProfile";
+      fillColor = "1.000000 1.000000 1.000000 0.000000";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      position = "770 30";
+      extent = "50 20";
+      minExtent = "8 8";
+      visible = "1";
+      helpTag = "0";
+      text = " ";
+      maxLength = "255";
+   };
+   new GuiTextCtrl(gunlabel) {
+      profile = "ScoreTextProfile";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      position = "15 540";
+      extent = "100 20";
+      minExtent = "8 8";
+      visible = "1";
+      helpTag = "0";
+      text = "Weapon : ";
+      maxLength = "255";
+   };
+   new GuiTextCtrl(gunbox) {
+      profile = "ScoreTextProfile";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      position = "90 540";
+      extent = "100 20";
+      minExtent = "8 8";
+      visible = "1";
+      helpTag = "0";
+      text = " ";
+      maxLength = "255";
+   };
+   new GuiTextCtrl(ammolabel) {
+      profile = "ScoreTextProfile";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      position = "15 560";
+      extent = "100 20";
+      minExtent = "8 8";
+      visible = "1";
+      helpTag = "0";
+      text = "Ammo : ";
+      maxLength = "255";
+   };
+   new GuiTextCtrl(ammobox) {
+      profile = "ScoreTextProfile";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      position = "80 560";
+      extent = "100 20";
+      minExtent = "8 8";
+      visible = "1";
+      helpTag = "0";
+      text = " ";
+      maxLength = "255";
+   };
+   new GuiTextCtrl(liveslabel) {
+      profile = "ScoreTextProfile";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      position = "720 10";
+      extent = "50 20";
+      minExtent = "8 8";
+      visible = "1";
+      helpTag = "0";
+      text = "Lives : ";
+      maxLength = "255";
+   };
+   new GuiTextCtrl(livesbox) {
+      profile = "ScoreTextProfile";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      position = "770 10";
+      extent = "100 20";
+      minExtent = "8 8";
+      visible = "1";
+      helpTag = "0";
+      text = " ";
+      maxLength = "255";
+   };
+   new GuiTextCtrl(infobox) {
+      profile = "ScoreTextProfile";
+      horizSizing = "right";
+      vertSizing = "bottom";
+      position = "240 380";
+      extent = "500 200";
+      minExtent = "8 8";
+      visible = "1";
+      helpTag = "0";
+      text = "";
+      maxLength = "255";
+   };
+};
+

@@ -1,0 +1,86 @@
+
+
+new GuiChunkedBitmapCtrl(Information) {
+   profile = "GuiContentProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   helpTag = "0";
+   bitmap = "./interfaces/info_options";
+   useVariable = "0";
+   tile = "0";
+
+   new GuiButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "150 300";
+      extent = "110 20";
+      minExtent = "8 8";
+      visible = "1";
+      command = "changingScreens(100);";
+      helpTag = "0";
+      text = "ConCourse Escape";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+   new GuiButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "350 300";
+      extent = "110 20";
+      minExtent = "8 8";
+      visible = "1";
+      command = "changingScreens(101);";
+      helpTag = "0";
+      text = "Walk Around";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+   new GuiButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "550 300";
+      extent = "110 20";
+      minExtent = "8 8";
+      visible = "1";
+      command = "changingScreens(102);";
+      helpTag = "0";
+      text = "Survival";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+   new GuiButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "350 360";
+      extent = "110 20";
+      minExtent = "8 8";
+      visible = "1";
+      command = "changingScreens(200);";
+      helpTag = "0";
+      text = "Game Setup";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+   new GuiButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "350 430";
+      extent = "110 20";
+      minExtent = "8 8";
+      visible = "1";
+      command = "ShowMenuScreen();";
+      helpTag = "0";
+      text = "Menu";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+};

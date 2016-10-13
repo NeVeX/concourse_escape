@@ -1,0 +1,342 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         name = "Book B";
+         desc0 = "A map with lots of representative things that relate to gameplay.";
+   };
+   new MissionArea(MissionArea) {
+      area = "-152 -352 1040 1056";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "-1088 -928 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "./sky_day.dml";
+      cloudHeightPer[0] = "0.349971";
+      cloudHeightPer[1] = "0.25";
+      cloudHeightPer[2] = "0.199973";
+      cloudSpeed1 = "0.0002";
+      cloudSpeed2 = "0.0004";
+      cloudSpeed3 = "0.0006";
+      visibleDistance = "1100";
+      fogDistance = "1000";
+      fogColor = "0.820000 0.828000 0.844000 1.000000";
+      fogVolume1 = "500 0 100";
+      fogVolume2 = "0 0 0";
+      fogVolume3 = "0 0 0";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 -222768174765569860000000000000000000000.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 0.000000";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 -170698929442160050000000000000000000000.000000";
+      windVelocity = "0.1 0.1 0";
+      windEffectPrecipitation = "1";
+      SkySolidColor = "0.547000 0.641000 0.789000 0.000000";
+      useSkyTextures = "1";
+      renderBottomTexture = "0";
+      noRenderBans = "0";
+         locked = "true";
+   };
+   new Sun() {
+      direction = "0.635001 0.635001 -0.439941";
+      color = "0.888000 0.885000 0.780000 1.000000";
+      ambient = "0.400000 0.400000 0.400000 1.000000";
+         locked = "true";
+         rotation = "1 0 0 0";
+         position = "0 0 0";
+         scale = "1 1 1";
+   };
+   new TerrainBlock(Terrain) {
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      detailTexture = "./detail1";
+      terrainFile = "./book_ch5.ter";
+      squareSize = "8";
+         locked = "true";
+         position = "-1024 -1024 0";
+   };
+   new WaterBlock(Water) {
+      position = "-1024 -1024 0";
+      rotation = "1 0 0 0";
+      scale = "2048 2048 125";
+      UseDepthMask = "1";
+      surfaceTexture = "./water";
+      liquidType = "OceanWater";
+      density = "1";
+      viscosity = "15";
+      waveMagnitude = "1";
+      surfaceOpacity = "0.75";
+      envMapIntensity = "0.7";
+      TessSurface = "50";
+      TessShore = "60";
+      SurfaceParallax = "0.5";
+      FlowAngle = "0";
+      FlowRate = "0";
+      DistortGridScale = "0.1";
+      DistortMag = "0.05";
+      DistortTime = "0.5";
+      ShoreDepth = "20";
+      DepthGradient = "1";
+      MinAlpha = "0.03";
+      MaxAlpha = "1";
+      removeWetEdges = "0";
+         extent = "100 100 10";
+         params3 = "1.21 -0.61 0.13 -0.33";
+         params2 = "0.39 0.39 0.2 0.133";
+         params1 = "0.63 -2.41 0.33 0.21";
+         textureSize = "32 32";
+         floodFill = "1";
+         params0 = "0.32 -0.67 0.066 0.5";
+         envMapTexture = "fps/data/skies/sunset_0007";
+         seedPoints = "0 0 1 0 1 1 0 1";
+   };
+   new InteriorInstance() {
+      position = "-4.05031 54.9271 207.919";
+      rotation = "0 0 -1 46.4096";
+      scale = "1 1 1";
+      interiorFile = "~/data/structures/hovels/hovelb.dif";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "581.572 309.398 201.403";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/structures/towers/landtower.dif";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "17.2998 349.978 192.873";
+      rotation = "0 0 -1 25.2101";
+      scale = "1 1 1";
+      interiorFile = "~/data/structures/hovels/hovelb.dif";
+      showTerrainInside = "0";
+   };
+   new Item() {
+      position = "23.987 344.374 184.222";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "FirstAidKit";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "606.639 393.585 174.302";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "FirstAidKit";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new InteriorInstance() {
+      position = "604.58 385.107 182.953";
+      rotation = "0 0 1 218.479";
+      scale = "1 1 1";
+      interiorFile = "~/data/structures/hovels/hovelb.dif";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "407.536 -582.066 196.612";
+      rotation = "0 0 1 218.479";
+      scale = "1 1 1";
+      interiorFile = "~/data/structures/hovels/hovelb.dif";
+      showTerrainInside = "0";
+   };
+   new Item() {
+      position = "409.595 -573.588 187.961";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "FirstAidKit";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-1.66488 8.23186 200.383";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Crossbow";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-7.7879 10.4259 200.488";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "CrossbowAmmo";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Player() {
+      position = "-823.057 443.843 300.048";
+      rotation = "0 0 1 55.3224";
+      scale = "1 1 1";
+      dataBlock = "HumanMaleAvatar";
+         client = "1271";
+         mountVehicle = "0";
+   };
+   new Item() {
+      position = "188.801 -727.934 128.523";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "600.636 305.572 181.944";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1251.72 430.32 285.734";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new InteriorInstance() {
+      position = "1232.65 434.146 305.193";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/structures/towers/landtower.dif";
+      showTerrainInside = "0";
+   };
+   new Item() {
+      position = "351.067 -535.367 193.598";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new InteriorInstance() {
+      position = "344.788 -553.77 213.057";
+      rotation = "0 0 -1 82.5059";
+      scale = "1 1 1";
+      interiorFile = "~/data/structures/towers/landtower.dif";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "185.234 -747.474 147.478";
+      rotation = "0 0 -1 91.1003";
+      scale = "1 1 1";
+      interiorFile = "~/data/structures/towers/watertower.dif";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "215.608 -735.938 126";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/structures/docks/ggbridgem.dif";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "205.623 -727.851 126";
+      rotation = "0 0 -1 91.1003";
+      scale = "1 1 1";
+      interiorFile = "~/data/structures/docks/ggbridgem.dif";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "215.575 -723.949 126";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/structures/docks/ggbridges.dif";
+      showTerrainInside = "0";
+   };
+   new Item(silv) {
+      position = "303.144 82.6854 182.138";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Silver";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new InteriorInstance() {
+      position = "299.577 63.7454 201.093";
+      rotation = "0 0 -1 91.1003";
+      scale = "1 1 1";
+      interiorFile = "~/data/structures/towers/watertower.dif";
+      showTerrainInside = "0";
+   };
+   new Item(silv) {
+      position = "193.718 573.214 222.246";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Silver";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new InteriorInstance() {
+      position = "190.151 554.274 241.201";
+      rotation = "0 0 -1 91.1003";
+      scale = "1 1 1";
+      interiorFile = "~/data/structures/towers/watertower.dif";
+      showTerrainInside = "0";
+   };
+   new Item(silv) {
+      position = "-803.303 445.131 304.322";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Silver";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new InteriorInstance() {
+      position = "-806.87 426.191 323.277";
+      rotation = "0 0 -1 91.1003";
+      scale = "1 1 1";
+      interiorFile = "~/data/structures/towers/watertower.dif";
+      showTerrainInside = "0";
+   };
+   new Item() {
+      position = "-414.61 19.5063 202.635";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "FirstAidKit";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new InteriorInstance() {
+      position = "-421.298 25.1103 211.286";
+      rotation = "0 0 -1 25.2101";
+      scale = "1 1 1";
+      interiorFile = "~/data/structures/hovels/hovelb.dif";
+      showTerrainInside = "0";
+   };
+   new Item() {
+      position = "-926.353 464.921 248.398";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "FirstAidKit";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new InteriorInstance() {
+      position = "-933.041 470.525 257.049";
+      rotation = "0 0 -1 25.2101";
+      scale = "1 1 1";
+      interiorFile = "~/data/structures/hovels/hovelb.dif";
+      showTerrainInside = "0";
+   };
+};
+//--- OBJECT WRITE END ---

@@ -1,0 +1,229 @@
+
+new GuiChunkedBitmapCtrl(MenuScreenMarX) {
+   profile = "GuiContentProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   helpTag = "0";
+   bitmap = "./interfaces/MarX";
+   useVariable = "0";
+   tile = "0";
+
+   new GuiButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "29 237";
+      extent = "110 20";
+      minExtent = "8 8";
+      visible = "1";
+      command = "changingScreens(1);";
+      helpTag = "0";
+      text = "Start Game";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+   new GuiButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "29 291";
+      extent = "110 20";
+      minExtent = "8 8";
+      visible = "1";
+      command = "changingScreens(2);";
+      helpTag = "0";
+      text = "Information";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+   new GuiButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "29 434";
+      extent = "110 20";
+      minExtent = "8 8";
+      visible = "1";
+      command = "Quit();";
+      helpTag = "0";
+      text = "Quit";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+};
+
+new GuiChunkedBitmapCtrl(MenuScreenConcourse) {
+   profile = "GuiContentProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   helpTag = "0";
+   bitmap = "./interfaces/Concourse";
+   useVariable = "0";
+   tile = "0";
+
+   new GuiButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "29 237";
+      extent = "110 20";
+      minExtent = "8 8";
+      visible = "1";
+      command = "changingScreens(1);";
+      helpTag = "0";
+      text = "Start Game";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+   new GuiButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "29 291";
+      extent = "110 20";
+      minExtent = "8 8";
+      visible = "1";
+      command = "changingScreens(2);";
+      helpTag = "0";
+      text = "Information";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+   new GuiButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "29 434";
+      extent = "110 20";
+      minExtent = "8 8";
+      visible = "1";
+      command = "Quit();";
+      helpTag = "0";
+      text = "Quit";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+};
+new GuiChunkedBitmapCtrl(MenuScreenWalk) {
+   profile = "GuiContentProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   helpTag = "0";
+   bitmap = "./interfaces/WalkAround";
+   useVariable = "0";
+   tile = "0";
+
+   new GuiButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "29 237";
+      extent = "110 20";
+      minExtent = "8 8";
+      visible = "1";
+      command = "changingScreens(1);";
+      helpTag = "0";
+      text = "Start Game";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+   new GuiButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "29 291";
+      extent = "110 20";
+      minExtent = "8 8";
+      visible = "1";
+      command = "changingScreens(2);";
+      helpTag = "0";
+      text = "Information";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+   new GuiButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "29 434";
+      extent = "110 20";
+      minExtent = "8 8";
+      visible = "1";
+      command = "Quit();";
+      helpTag = "0";
+      text = "Quit";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+};
+new GuiChunkedBitmapCtrl(MenuScreenSurvive) {
+   profile = "GuiContentProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   helpTag = "0";
+   bitmap = "./interfaces/Survive";
+   useVariable = "0";
+   tile = "0";
+
+   new GuiButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "29 237";
+      extent = "110 20";
+      minExtent = "8 8";
+      visible = "1";
+      command = "changingScreens(1);";
+      helpTag = "0";
+      text = "Start Game";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+   new GuiButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "29 291";
+      extent = "110 20";
+      minExtent = "8 8";
+      visible = "1";
+      command = "changingScreens(2);";
+      helpTag = "0";
+      text = "Information";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+   new GuiButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "29 434";
+      extent = "110 20";
+      minExtent = "8 8";
+      visible = "1";
+      command = "Quit();";
+      helpTag = "0";
+      text = "Quit";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+};
+
+
+

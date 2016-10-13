@@ -1,0 +1,533 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+      musicTrack = "lush";
+      CTF_scoreLimit = "5";
+      cdTrack = "2";
+
+   new ScriptObject(MissionInfo) {
+         name = "New Mission";
+         descLines = "2";
+         desc0 = "MarX Gaming.";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "./skies/sky_sunset.dml";
+      cloudHeightPer[0] = "0.349971";
+      cloudHeightPer[1] = "0.3";
+      cloudHeightPer[2] = "0.199973";
+      cloudSpeed1 = "0.0005";
+      cloudSpeed2 = "0.001";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "1000";
+      fogDistance = "500";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "0 0 0";
+      fogVolume2 = "0 0 0";
+      fogVolume3 = "0 0 0";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 -222768174765569860000000000000000000000.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 0.000000";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 -170698929442160050000000000000000000000.000000";
+      windVelocity = "1 1 0";
+      windEffectPrecipitation = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      useSkyTextures = "1";
+      renderBottomTexture = "0";
+      noRenderBans = "0";
+         locked = "true";
+         fogStorm1 = "0";
+         fogStorm2 = "0";
+         fogStorm3 = "0";
+   };
+   new StaticShape() {
+      position = "108.155 37.0732 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "80.422 77.931 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "55.078 77.813 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "16.11 52.62 68.7";
+      rotation = "4.19095e-009 -4.68306e-009 1 90";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "2.908 77.781 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "-22.271 77.791 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "-47.212 36.616 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "-54.012 36.616 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "-86.412 36.616 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "-93.212 36.616 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "-137.743 51.918 68.7";
+      rotation = "4.19095e-009 -4.68306e-009 1 90";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "-193.59 54.657 68.7";
+      rotation = "4.19095e-009 -4.68306e-009 1 90";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "-207.822 18.963 68.7";
+      rotation = "4.19095e-009 -4.68306e-009 1 90";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "-184.112 107.512 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "-266.512 108.512 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "-284.712 108.512 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "-303.112 108.512 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "-321.112 108.512 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "-340.083 117.609 68.7";
+      rotation = "4.19095e-009 -4.68306e-009 1 90";
+      scale = "1.35 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "-231.978 18.684 68.7";
+      rotation = "1 0 0 0";
+      scale = "0.8 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "-234.778 18.684 68.7";
+      rotation = "1 0 0 0";
+      scale = "0.8 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "-221.278 31.084 68.7";
+      rotation = "1 0 0 0";
+      scale = "0.8 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "256.948 55.528 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "282.148 55.528 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "295.548 16.728 68.7";
+      rotation = "4.19095e-009 -4.68306e-009 1 90";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "18.02 9.746 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 0.3 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "22.62 9.746 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 0.3 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "27.22 9.746 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 0.3 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "31.62 9.746 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 0.3 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "276.196 9.923 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "283.996 9.923 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new StaticShape() {
+      position = "-180.604 9.923 68.7";
+      rotation = "1 0 0 0";
+      scale = "3.4 1 1";
+      dataBlock = "ADoor";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+   };
+   new Sun() {
+      direction = "0.57735 0.57735 -0.57735";
+      color = "0.600000 0.600000 0.600000 1.000000";
+      ambient = "0.400000 0.400000 0.400000 1.000000";
+         position = "0 0 0";
+         scale = "1 1 1";
+         elevation = "35";
+         locked = "true";
+         azimuth = "0";
+         rotation = "1 0 0 0";
+   };
+   new TerrainBlock(Terrain) {
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      detailTexture = "./terrains/details/detail1";
+      terrainFile = "./flat_surface3.ter";
+      squareSize = "8";
+         position = "-1024 -1024 0";
+         bumpScale = "1";
+         locked = "true";
+         bumpOffset = "0.01";
+         zeroBumpScale = "8";
+   };
+   new InteriorInstance() {
+      position = "20 20 70";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/structures/concourse6_cartoon.dif";
+      showTerrainInside = "0";
+   };
+   new SimGroup(PlayerDropPoints) {
+   };
+   new Item() {
+      position = "275.889 19.8515 70.2474";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "234.665 11.5833 50.2474";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "234.665 3.58331 50.0474";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "224.53 -9.01839 50.2474";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "220.186 -17.8477 50.4474";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "214.394 -29.6201 50.8474";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "207.154 -44.3356 50.2474";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "210.05 -38.4494 50.4474";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "212.946 -32.5632 50.2474";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "212.946 -32.5632 50.4474";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "203.346 -32.5632 49.4474";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+};
+//--- OBJECT WRITE END ---

@@ -1,0 +1,28 @@
+new GuiChunkedBitmapCtrl(GameSetupInfo) {
+   profile = "GuiContentProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   helpTag = "0";
+   bitmap = "./interfaces/game_setup";
+   useVariable = "0";
+   tile = "0";
+   
+    new GuiButtonCtrl() {
+      profile = "GuiButtonProfile2";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "350 430";
+      extent = "110 20";
+      minExtent = "8 8";
+      visible = "1";
+      command = "changingScreens(2);";
+      helpTag = "0";
+      text = "Back";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+};
