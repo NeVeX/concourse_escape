@@ -1,0 +1,9 @@
+This also contains all the created structures (cartoon maps etc) and textures that were
+used throughout production that may or may not be released in the release.
+
+This is not for release as it contains many more redundant information and files.
+
+The menu is different in this and a few more bugs have being fixed.
+
+This version is more perferable.
+

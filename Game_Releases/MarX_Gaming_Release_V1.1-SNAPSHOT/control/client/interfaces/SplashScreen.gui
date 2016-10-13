@@ -1,0 +1,76 @@
+new GuiChunkedBitmapCtrl(SplashScreen) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   helpTag = "0";
+   bitmap = "./interfaces/MarX_Intro";
+   useVariable = "0";
+   tile = "0";
+   noCursor=1;
+   new GuiInputCtrl(SplashScreenInputCtrl) {
+      profile = "GuiInputCtrlProfile";
+      position = "0 0";
+      extent = "10 10";
+   };
+};
+new GuiChunkedBitmapCtrl(SplashScreenGameOver) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   helpTag = "0";
+   bitmap = "./interfaces/game_over";
+   useVariable = "0";
+   tile = "0";
+   noCursor=1;
+   new GuiInputCtrl(SplashScreenInputCtrl) {
+      profile = "GuiInputCtrlProfile";
+      position = "0 0";
+      extent = "10 10";
+   };
+};
+new GuiChunkedBitmapCtrl(WarningScreen) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   helpTag = "0";
+   bitmap = "./interfaces/warning";
+   useVariable = "0";
+   tile = "0";
+   noCursor=1;
+   new GuiInputCtrl(SplashScreenInputCtrl) {
+      profile = "GuiInputCtrlProfile";
+      position = "0 0";
+      extent = "10 10";
+   };
+};
+new GuiChunkedBitmapCtrl(LoadingStartScreen) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   helpTag = "0";
+   bitmap = "./interfaces/loading";
+   useVariable = "0";
+   tile = "0";
+   noCursor=1;
+   new GuiInputCtrl(SplashScreenInputCtrl) {
+      profile = "GuiInputCtrlProfile";
+      position = "0 0";
+      extent = "10 10";
+   };
+};

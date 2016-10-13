@@ -1,0 +1,616 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+      CTF_scoreLimit = "5";
+      cdTrack = "2";
+      musicTrack = "lush";
+
+   new ScriptObject(MissionInfo) {
+         descLines = "2";
+         name = "New Mission";
+         desc0 = "MarX Gaming.";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "./skies/sky_sunset.dml";
+      cloudHeightPer[0] = "0.349971";
+      cloudHeightPer[1] = "0.3";
+      cloudHeightPer[2] = "0.199973";
+      cloudSpeed1 = "0.0005";
+      cloudSpeed2 = "0.001";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "1000";
+      fogDistance = "500";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "0 0 0";
+      fogVolume2 = "0 0 0";
+      fogVolume3 = "0 0 0";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 -222768174765569860000000000000000000000.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 0.000000";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 -170698929442160050000000000000000000000.000000";
+      windVelocity = "1 1 0";
+      windEffectPrecipitation = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      useSkyTextures = "1";
+      renderBottomTexture = "0";
+      noRenderBans = "0";
+         fogStorm3 = "0";
+         fogStorm1 = "0";
+         locked = "true";
+         fogStorm2 = "0";
+   };
+   // all the doors
+   new StaticShape() {  // room beside smokies
+   	position = "108.155 37.0732 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   new StaticShape() {	// big lecture hall on right door RIGHT
+   	position = "80.422 77.931 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() { // big lecture hall on right door LEFT
+   	position = "55.078 77.813 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() {	// THE ROOM INBETWEEN THE BIG LECTURE HALLS
+   	position = "16.110 52.620 68.7";
+   	rotation = "4.19095e-009 -4.68306e-009 1 90";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() { // big lecture hall on LEFT door RIGHT
+   	position = "2.908 77.781 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() {	// big lecture hall on LEFT door LEFT
+   	position = "-22.271 77.791 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() { // AC101
+   	position = "-47.212 36.616 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() { // AC102
+   	position = "-54.012 36.616 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   new StaticShape() {	 // AC103
+   	position = "-86.412 36.616 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() {  // AC104
+   	position = "-93.212 36.616 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() { // LECTURE HALL BESIDE AC104
+   	position = "-137.743 51.918 68.7";
+   	rotation = "4.19095e-009 -4.68306e-009 1 90";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() {	 // GEOGRRAPHY LECTURE HALL
+   	position = "-193.590 54.657 68.7";
+   	rotation = "4.19095e-009 -4.68306e-009 1 90";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() {	// BANK ENTRANCE
+   	position = "-207.822 18.963 68.7";
+   rotation = "4.19095e-009 -4.68306e-009 1 90";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() {	// BLUE BLOCK DOOR
+   	position = "-184.112 107.512 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() {	// GEOGRAPHY ROOM 1
+   	position = "-266.512 108.512 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() {	// GEOGRAPHY ROOM 2
+   	position = "-284.712 108.512 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() {	// GEOGRAPHY ROOM 3
+   	position = "-303.112 108.512 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() {	 // GEOGRAPHY ROOM 4
+   	position = "-321.112 108.512 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() { // last room in the gepgraphy section
+   	position = "-340.083 117.609 68.7";
+   	rotation = "4.19095e-009 -4.68306e-009 1 90";
+   	scale = "1.35 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() { // INSIDE THE BANK FIRST DOOR ON LEFT
+   	position = "-231.978 18.684 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "0.8 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() {	// INSIDE THE BANK SECOND DOOR ON LEFT
+   	position = "-234.778 18.684 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "0.8 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() {	// INSIDE THE BANK DOOR BEHIND COUNTER
+   	position = "-221.278 31.084 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "0.8 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() {	// LECTURE HALL ON FAR RIGHT DOOR LEFT
+   	position = "256.948 55.528 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() {	// LECTURE HALL ON FAR RIGHT DOOR RIGHT
+   	position = "282.148 55.528 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() {	// FAR BIG ROOM ON THE RIGHT
+   	position = "295.548 16.728 68.7";
+   	rotation = "4.19095e-009 -4.68306e-009 1 90";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() {	// MAIN ENTRANCE FAR LEFT DOOR LOOKING FROM YELLOW THING SIDE
+   	position = "18.020 9.746 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "1.0 0.3 1.0";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() {	// MAIN ENTRANCE MIDDLE LEFT DOOR LOOKING FROM YELLOW THING SIDE
+   	position = "22.620 9.746 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "1 0.3 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() {	// MAIN ENTRANCE MIDDLE RIGHT DOOR LOOKING FROM YELLOW THING SIDE
+   	position = "27.220 9.746 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "1 0.3 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() {	// MAIN ENTRANCE FAR RIGHT DOOR LOOKING FROM YELLOW THING SIDE
+   	position = "31.620 9.746 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "1 0.3 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() {	// FAR RIGHT MAIN ENTRANCE DOOR ON LEFT FROM LOOKING OUTSIDE
+   	position = "276.196 9.923 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() {	// FAR RIGHT MAIN ENTRANCE DOOR ON RIGHT FROM LOOKING OUTSIDE
+   	position = "283.996 9.923 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "1 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   		new StaticShape() {	// FAR LEFT MAIN ENTRANCE BESIDE BANK
+   	position = "-180.604 9.923 68.7";
+   	rotation = "1 0 0 0";
+   	scale = "3.4 1 1";
+   	dataBlock = "ADoor";
+   		rotationDirection = "1";
+   		maxOpenAngle = "90";
+   		};
+   new Sun() {
+      direction = "0.57735 0.57735 -0.57735";
+      color = "0.600000 0.600000 0.600000 1.000000";
+      ambient = "0.400000 0.400000 0.400000 1.000000";
+         position = "0 0 0";
+         scale = "1 1 1";
+         azimuth = "0";
+         locked = "true";
+         elevation = "35";
+         rotation = "1 0 0 0";
+   };
+   new TerrainBlock(Terrain) {
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      detailTexture = "./terrains/details/detail1";
+      terrainFile = "./flat_surface4.ter";
+      squareSize = "8";
+         position = "-1024 -1024 0";
+         bumpScale = "1";
+         bumpOffset = "0.01";
+         locked = "true";
+         zeroBumpScale = "8";
+   };
+   new InteriorInstance() {
+      position = "20 20 70";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/structures/concourse6_cartoon.dif";
+      showTerrainInside = "0";
+   };
+   new Item() {
+      position = "-240.524 12.1378 70.6265";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "234.665 11.5833 50.2474";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "234.665 3.58331 50.0474";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "224.53 -9.01839 50.2474";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "220.186 -17.8477 50.4474";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "214.394 -29.6201 50.8474";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "207.154 -44.3356 50.2474";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "210.05 -38.4494 50.4474";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "212.946 -32.5632 50.2474";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "212.946 -32.5632 50.4474";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "203.346 -32.5632 49.4474";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "Copper";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "271.582 83.2722 63.2265";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "108.556 49.3423 71.8265";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "68.1368 122.756 58.2265";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "42.552 60.9572 70.8265";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-7.68393 122.307 59.2265";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-40.1345 58.6034 70.6265";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-57.5779 57.7557 70.6265";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-78.5818 58.084 70.8265";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-96.8333 58.8154 70.6265";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-128.38 70.9426 61.8265";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-181.805 74.6806 62.4265";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-181.968 93.2978 70.8265";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-257.099 85.5953 71.0265";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-276.096 86.1118 70.8265";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-296.823 86.3912 70.8265";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-314.991 87.3241 70.8265";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-368.856 120.768 70.8265";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-217.448 29.8496 71.3659";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-224.52 13.7853 71.4266";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "425.01 32.2749 70.6265";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "Gold";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+};
+//--- OBJECT WRITE END ---

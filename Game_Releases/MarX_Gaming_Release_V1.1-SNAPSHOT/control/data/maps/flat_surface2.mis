@@ -1,0 +1,93 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+      CTF_scoreLimit = "5";
+      musicTrack = "lush";
+      cdTrack = "2";
+
+   new ScriptObject(MissionInfo) {
+         descLines = "2";
+         name = "New Mission";
+         desc0 = "MarX Gaming.";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      materialList = "./skies/sky_sunset.dml";
+      cloudHeightPer[0] = "0.349971";
+      cloudHeightPer[1] = "0.3";
+      cloudHeightPer[2] = "0.199973";
+      cloudSpeed1 = "0.0005";
+      cloudSpeed2 = "0.001";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      fogDistance = "300";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "0 0 0";
+      fogVolume2 = "0 0 0";
+      fogVolume3 = "0 0 0";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 -222768174765569860000000000000000000000.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 0.000000";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 -170698929442160050000000000000000000000.000000";
+      windVelocity = "1 1 0";
+      windEffectPrecipitation = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      useSkyTextures = "1";
+      renderBottomTexture = "0";
+      noRenderBans = "0";
+         fogStorm2 = "0";
+         fogStorm3 = "0";
+         locked = "true";
+         fogStorm1 = "0";
+   };
+   new StaticShape() {
+      position = "108.155 37.0732 68.7";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "ADoor";
+         maxOpenAngle = "90";
+         rotationDirection = "1";
+         originalRotation = "0";
+         doorOpenFlag = "0";
+         currentRotation = "0";
+   };
+   new Sun() {
+      direction = "0.57735 0.57735 -0.57735";
+      color = "0.600000 0.600000 0.600000 1.000000";
+      ambient = "0.400000 0.400000 0.400000 1.000000";
+         position = "0 0 0";
+         scale = "1 1 1";
+         azimuth = "0";
+         locked = "true";
+         rotation = "1 0 0 0";
+         elevation = "35";
+   };
+   new TerrainBlock(Terrain) {
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      detailTexture = "./terrains/details/detail1";
+      terrainFile = "./flat_surface2.ter";
+      squareSize = "8";
+         position = "-1024 -1024 0";
+         bumpScale = "1";
+         bumpOffset = "0.01";
+         locked = "true";
+         zeroBumpScale = "8";
+   };
+   new InteriorInstance() {
+      position = "20 20 70";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/structures/concourse5.dif";
+      showTerrainInside = "0";
+   };
+   new SimGroup(PlayerDropPoints) {
+   };
+};
+//--- OBJECT WRITE END ---

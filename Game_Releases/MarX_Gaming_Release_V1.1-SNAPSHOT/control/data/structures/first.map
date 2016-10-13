@@ -1,0 +1,23 @@
+// This map has been written by the Torque Constructor
+// For more information see http://www.garagegames.com
+
+{
+   "classname" "worldspawn"
+   "detail_number" "0"
+   "min_pixels" "250"
+   "geometry_scale" "32"
+   "light_geometry_scale" "32"
+   "ambient_color" "0 0 0"
+   "emergency_ambient_color" "0 0 0"
+   "mapversion" "220"
+
+   // Brush 0
+   {
+      ( 256 -208 0 ) ( 256 -208 384 ) ( 256 176 384 ) TGEDemo/granite_tile2 [ 0 1 0 208 ] [ 0 0 -1 0 ] 0 1 1
+      ( -192 -208 0 ) ( -192 176 0 ) ( -192 176 384 ) TGEDemo/granite_tile2 [ 0 -1 0 176 ] [ 0 0 -1 0 ] 0 1 1
+      ( -192 176 0 ) ( 256 176 0 ) ( 256 176 384 ) TGEDemo/granite_tile2 [ -1 0 0 256 ] [ 0 0 -1 0 ] 0 1 1
+      ( -192 -208 0 ) ( -192 -208 384 ) ( 256 -208 384 ) TGEDemo/granite_tile2 [ 1 0 0 192 ] [ 0 0 -1 0 ] 0 1 1
+      ( -192 -208 384 ) ( -192 176 384 ) ( 256 176 384 ) TGEDemo/granite_tile2 [ 1 0 0 192 ] [ 0 -1 0 -208 ] 0 1 1
+      ( -192 -208 0 ) ( 256 -208 0 ) ( 256 176 0 ) TGEDemo/granite_tile2 [ -1 0 0 256 ] [ 0 -1 0 -208 ] 0 1 1
+   }
+}
